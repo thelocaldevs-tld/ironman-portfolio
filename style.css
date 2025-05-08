@@ -1,0 +1,64 @@
+/* Montserrat font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* css variables */
+:root {
+  --armor-red: #b00000;
+  --gunmetal-gray: #5c5c5c;
+  --armor-gold: #ffb800;
+}
+
+/* global configuration */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  padding: 0 100px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 600px;
+  /* border: 1px solid red; */
+}
+.hero-texts,
+.hero-image {
+  width: 100%;
+}
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+.hero-image img {
+  width: 350px;
+  border-radius: 40px;
+}
+
+/* .hero-texts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+} */
+.hero-texts h1 {
+    margin-bottom: 8px;
+  font-size: 2.5rem;
+  color: var(--armor-red);
+}
+.hero-texts .red-tony {
+  color: var(--armor-gold);
+}
+.hero-texts h2 {
+    margin-bottom: 8px;
+  font-size: 1.5rem;
+  color: var(--gunmetal-gray);
+}
+
+.hero-texts button{
+    margin-top: 8px;
+}
