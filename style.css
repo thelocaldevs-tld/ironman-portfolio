@@ -23,7 +23,12 @@ section {
 .hero {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 600px;
+  /* border: 1px solid red; */
+}
+.hero-reverse {
+  flex-direction: row-reverse;
   /* border: 1px solid red; */
 }
 .hero-texts,
@@ -31,8 +36,12 @@ section {
   width: 100%;
 }
 .hero-image {
+  /* border: 1px solid blue; */
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+}
+.hero-img-start {
+  justify-content: flex-start;
 }
 .hero-image img {
   width: 350px;
@@ -46,19 +55,31 @@ section {
   gap: 12px;
 } */
 .hero-texts h1 {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
   font-size: 2.5rem;
+}
+.red-text {
   color: var(--armor-red);
 }
-.hero-texts .red-tony {
+.gold-text {
   color: var(--armor-gold);
 }
 .hero-texts h2 {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
   font-size: 1.5rem;
   color: var(--gunmetal-gray);
 }
 
-.hero-texts button{
-    margin-top: 8px;
+.hero-texts button {
+  margin-top: 8px;
+}
+.hirebtn {
+  border: none;
+  background-color: var(--armor-red);
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 9999px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
 }
