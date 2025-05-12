@@ -6,6 +6,7 @@
   --armor-red: #b00000;
   --gunmetal-gray: #5c5c5c;
   --armor-gold: #ffb800;
+  --arc-reactor-blue: #00e5ff;
 }
 
 /* global configuration */
@@ -21,6 +22,7 @@ section {
 }
 
 .hero {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,4 +84,63 @@ section {
   font-weight: 500;
   cursor: pointer;
   margin-top: 20px;
+}
+
+/* Experience section */
+.experience-section {
+  margin: 0 50px;
+  padding: 20px 100px;
+  border-radius: 30px;
+  background-color: rgba(0, 229, 255, 0.2);
+}
+.experience-section > h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--gunmetal-gray);
+}
+
+.experience {
+  padding: 20px;
+  border-left: 1px solid var(--gunmetal-gray);
+}
+.experience > h1 {
+  color: var(--gunmetal-gray);
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+}
+.experience > h4 {
+  color: var(--armor-red);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.experience > p {
+  color: #777777;
+  font-size: 1rem;
+}
+.hr-line-box {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+.hr_line {
+  flex-grow: 1;
+  border: 1px solid lightgray;
+}
+.hr_linetxt {
+  color: lightgray;
+  font-size: 35px;
+  padding: 0 20px;
+  font-weight: bold;
+}
+footer {
+  margin-top: 50px;
+  padding: 20px;
+}
+.copyright-text {
+  color: var(--gunmetal-gray);
 }
